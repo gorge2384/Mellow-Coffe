@@ -1,0 +1,39 @@
+.nav-container-best-sellers-text::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    bottom: 2px;
+}
+
+.new::after {
+    content: "";
+    position: absolute;
+    width: 63px;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    bottom: 2px;
+}
+
+.aktive-link::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    bottom: 2px;
+}
+
+.neww::after {
+    content: "";
+    position: absolute;
+    width: 63px;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    bottom: 2px;
+}

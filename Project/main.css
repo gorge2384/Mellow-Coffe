@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Kaushan+Script&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Блок в котором находится все меню кофейни */
+
+.h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F5EBDD;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* position: fixed; */
+    z-index: 100;
+}
+
+/* Блок в котором находится все меню кофейни */
+
+/* Блок с текстом и опосанием кофейни */
+
+.header-global-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.header-global-text-h1{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'Changa One', sans-serif;
+}
+
+.header-global-text-p{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+.all-products-div{
+    position: relative;
+}
+
+.all-products-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    border-radius: 15px;
+    z-index: 100;
+    background-color: #f5dfc2;
+    width: 130px;
+    height: 140px;
+    color: black;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.all-products-div:hover .all-products-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.all-products-menu .button a{
+    position: relative;
+}
+
+.all-products-menu .button a::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 40px;
+    background: black;
+    transition: 0.3s ease-in-out;
+}
+
+.all-products-menu .button a:hover::before {
+    width: 80px;
+    transition: 0.3s ease-in-out;
+}
+
+.r{
+    color: black;
+}
+
+/* Блок с текстом и опосанием кофейни */
+
+/* Кнопки для навигации */
+
+.butn{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    top: 12px;
+}
+
+.butn1{
+    display: inline-block;
+    position: relative;
+    color: #F5EBDD;
+    background-color: #41321d;
+    font-weight: 400;
+    font-family: 'Kaushan Script';
+    padding: 10px 30px;
+    transition: 1s;
+}
+
+/* Кнопки для навигации */
+
+/* Анимация линии сверху при навидении на текст */
+
+.animate::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 1px;
+    background: black;
+    transform: scaleX(1);
+    transition: 0.5s;
+    width: 100%;
+}
+
+.animate:hover{
+    font-size: 16px;
+}
+
+.animate:hover::before{
+    transform: scaleX(1.35);
+}
+
+.butn1:hover{
+    background-color: #ec456f;
+    transition: 1s;
+}
+
+/* Анимация линии сверху при навидении на текст */
+
+.header-choice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+    gap: 30px;
+    margin-right: 75px;
+}
+
+.social-media{
+    display: flex;
+    gap: 25px;
+    margin-left: 70px;
+    margin-right: 86.45px;
+}
+
+.slider img{
+    width: 1400px;
+    height: 850px;
+    object-fit: cover;
+    opacity: 1;
+    transition: ease-in-out 0.7s;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5EBDD;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.text-container-h1{
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #41321d;
+}
+
+.menu{
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 350;
+    margin-top: 50px;
+    color: white;
+    padding: 10px 10px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #41321d;
+    transition: 0.2s ease-in-out;
+}
+
+.menu:hover{
+    background-color: #faf9f7;;
+    outline: solid 1px black;
+    color: black;
+}
+
+.main{
+    background-color: #f5dfc2;
+    padding-bottom: 50px;
+}
+
+.best-sellers-global-text{
+    text-align: center;
+    font-weight: 650;
+    font-size: 45px;
+    font-family: 'Tinos', sans-serif;
+    padding-top: 90px;
+}
+
+.explore-our-offerings-global-text{
+    text-align: center;
+    font-weight: 650;
+    font-size: 45px;
+    font-family: 'Tinos', sans-serif;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.best-croissants{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 1000px;
+    margin-left: 160px;
+    margin-top: 30px;
+    background-color: white;
+    padding: 60px 30px;
+    border-radius: 10px;
+}
+
+.cards-window{
+    overflow: hidden;
+    flex: 1;
+}
+
+.cards-track{
+    display: flex;
+    gap: 40px;
+    transition: transform 0.4s ease;
+}
+
+.card{
+    flex: 0 0 250px;
+    min-width: 0;
+}
+
+.card-image{
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    display: block;
+}
+
+.card-link{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 10px 10px;
+    opacity: 50%;
+    transform: translateY(100%);
+    transition: 0.4s;
+    color: black;
+}
+
+.best-croissants{
+    background-color: white;
+}
+
+.card-image:hover .card-link{
+    transform: translateY(0%);
+    transition: 0.4s;
+}
+
+.offering-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.offer-card{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.info{
+    padding: 20px 20px;
+}
+
+.img-and-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.offer-info-global-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.offer-info-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.menu-button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.best-desserts{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 1000px;
+    margin-left: 160px;
+    margin-top: 30px;
+    background-color: white;
+    padding: 60px 30px;
+    border-radius: 10px;
+}
+
+.story{
+    background-color: #f8dab3;
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.story-name{
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 404px;
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.name{
+    font-size: 46px;
+    font-weight: 500;
+    font-family: 'Kaushan Script', sans-serif;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    color: rgb(0, 0, 43);
+}
+
+.name::after{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    background-color: black;
+    bottom: 0;
+    left: 5%;
+}
+
+.story-info{
+    font-size: 28px;
+    font-weight: 450;
+    background-color: white;
+    padding: 90px 60px;
+}
+
+.read-more{
+    text-align: center;
+}
+
+.infinity-scroll{
+    overflow: hidden;
+}
+
+.scroll-text{
+    font-size: 35px;
+    font-weight: 450;
+    font-family: 'McLaren', sans-serif; font-style: italic;
+    color: rgb(0, 0, 43);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.img-track{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.img-track img{
+    width: 450px;
+    height: 280px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+
+.y{
+    transition: 0.4s;
+}
+
+.y:hover{
+    opacity: 60%;
+    transition: 0.4s;
+}
+
+.img-track-container:hover .img-track{
+    animation-play-state: paused;
+}
+
+.container{
+    padding-bottom: 100px;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+
+.open-hourse-collum{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.textt {
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Kaushan Script', sans-serif;
+    position: relative;
+    color: rgb(0, 0, 43);
+    margin-bottom: 20px;
+}
+
+.textt::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: black;
+    bottom: 0;
+    left: 5%;
+}
+
+.lv{
+    margin-bottom: 30px;
+}
+
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-color: #f8dab3;
+    padding-top: 250px;
+    padding-bottom: 30px;
+}
+
+.map{
+    width: 600px;
+    height: 370px;
+    position: relative;
+    bottom: 10px;
+}
+
+.gm{
+    width: 30px;
+    height: 28px;
+    position: relative;
+    bottom: 4px;
+    right: 5px;
+    margin-bottom: 13px;
+}
+
+.gmail-link{
+    color: black;
+}
+
+.open-hourse-under-text-1{
+    margin-right: 30px;
+}
+
+.navigation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f8dab3;
+    padding: 40px;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    background-color: black;
+    left: 20%;
+    bottom: 0;
+    transform: Scale(1);
+    transition: 0.4s;
+}
+
+.nav-link:hover::after{
+    transform: ScaleX(1.5);
+    transition: 0.4s; 
+}
+
+.footer-container{
+    background-color: #f8dab3;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    position: relative;
+}
+
+.footer-container::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    left: 5%;
+    top: 0;
+    background-color: black;
+}
+
+.none{
+    flex: 1;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    align-items: center;
+}
+
+.footer-description{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #f5dfc2;
+    padding: 40px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal-ok {
+    margin-top: 20px;
+    padding: 12px 30px;
+    cursor: pointer;
+    background-color: #e6cdab;
+}
+
+.celebration-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5dfc2;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.h3-textik {
+    font-size: 55px;
+    font-weight: 500;
+    font-family: 'Kaushan Script', sans-serif;
+    position: relative;
+    color: rgb(0, 0, 43);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 3px;
+}
+
+.p-textik {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Target', sans-serif;
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 43);
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F7F0DF;
+}
+
+video {
+    background-color: #000000;
+}
+
+.celebration-fleshcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5dfc2;
+    padding-bottom: 60px;
+}
+
+.fleshcard {
+    display: flex;
+    flex-direction: row;
+}
+
+.celeb-text-container {
+    padding: 70px 30px;
+}
+
+.celeb-img-container {
+    padding: 30px;
+}
+
+.h3-textbla {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 44px;
+    font-style: normal;
+    line-height: 62px;
+    color: #1c2e3b;
+}
+
+.p-textbla {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 21px;
+    font-style: normal;
+    text-align: center;
+    line-height: 28px;
+    color: #1c2e3b;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf1e5;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    gap: 50px;
+}
+
+.h3-textblat {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 58px;
+    font-style: normal;
+    text-align: center;
+    line-height: 62px;
+    color: #1c2e3b;
+    margin-bottom: 20px;
+}
+
+.p-textblat {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 21px;
+    font-style: normal;
+    text-align: center;
+    line-height: 28px;
+    color: #1c2e3b;
+}
+
+.a-textblat {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 21px;
+    font-style: normal;
+    text-align: center;
+    line-height: 28px;
+    color: #fcf6ee;
+    background-color: #CA8263;
+    padding: 10px 30px;
+    border-radius: 40px;
+    position: relative;
+    top: 30px;
+    left: 95px;
+}
+
+.over-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 40px 50px;
+    padding-bottom: 60px;
+    gap: 40px;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.over-info-h1 {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 58px;
+    font-style: normal;
+    text-align: center;
+    line-height: 62px;
+    color: #1c2e3b;
+    margin-bottom: 20px;
+}
+
+.over-info-p {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 21px;
+    font-style: normal;
+    text-align: center;
+    line-height: 28px;
+    color: #1c2e3b;
+}
+
+.rt {
+    text-align: center;
+    padding: 65px;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff3e3;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    gap: 50px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff3e3;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    gap: 50px;
+}
+
+.h3-contact {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 58px;
+    font-style: normal;
+    text-align: center;
+    line-height: 62px;
+    color: #1c2e3b;
+    margin-bottom: 20px;
+}
+
+.p-contact {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 21px;
+    font-style: normal;
+    text-align: center;
+    line-height: 28px;
+    color: #1c2e3b;
+}
+.tp {
+    padding-left: 100px;
+}
